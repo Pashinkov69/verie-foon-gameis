@@ -1,4 +1,4 @@
-package pckKotangensShooter;
+package gameeee;
 
 public class Choveche {
 	public static int x;

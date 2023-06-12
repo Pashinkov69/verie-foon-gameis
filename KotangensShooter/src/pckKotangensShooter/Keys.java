@@ -1,4 +1,4 @@
-package pckKotangensShooter;
+package gameeee;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
