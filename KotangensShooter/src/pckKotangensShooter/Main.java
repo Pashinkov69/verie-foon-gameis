@@ -1,4 +1,4 @@
-package gameeee;
+package pckKotangensShooter;
 import Core.Terminal;
 public class Main {
 	
@@ -17,7 +17,11 @@ public class Main {
 		Bord.setMatrix(strMatrix);
 		for(int i = 0; i<Msize; i++) {
 			for(int j = 0; j<Msize; j++) {
-				if(i==0||i==Msize-1)strMatrix[i][j] = "-";
+				if(i==0 && j==0)strMatrix[i][j] = "┌";
+				else if(i==Msize-1 && j==0)strMatrix[i][j] = "└";
+				else if(i==0 && j==Msize-1)strMatrix[i][j] = "┐";
+				else if(i==Msize-1 && j==Msize-1)strMatrix[i][j] = "┘";
+				else if(i==0||i==Msize-1)strMatrix[i][j] = "─";
 				else if(j==0||j==Msize-1)strMatrix[i][j] = "|";
 				else strMatrix[i][j] = " ";
 			
